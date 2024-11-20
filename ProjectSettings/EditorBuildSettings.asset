@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Initial Menu.unity
+    guid: 07ca6d865ec1c8747b6af08002bc0070
+  - enabled: 1
+    path: Assets/Scenes/Boxes Level.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Chameleon Level.unity
+    guid: cccd163aae66897419aa7ccbc65d300d
   m_configObjects: {}
