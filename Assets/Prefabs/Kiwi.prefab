@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1642894603721843363}
   - component: {fileID: 8359560963583452405}
   - component: {fileID: 2557224549446058715}
+  - component: {fileID: 2216846004998467485}
   m_Layer: 0
   m_Name: Kiwi
   m_TagString: Untagged
@@ -142,3 +143,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.36689556
+--- !u!114 &2216846004998467485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160834359123547246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6206df834bdfd94eb8f8de6f6ef4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 5

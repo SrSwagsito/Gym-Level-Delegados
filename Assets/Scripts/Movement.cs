@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovementWRayCast : MonoBehaviour
 {
+    [SerializeField] Joystick Joystick;
     Rigidbody2D rigid;
     //Uncomment when U have animator already
     SpriteRenderer sprt;
@@ -32,10 +33,9 @@ public class MovementWRayCast : MonoBehaviour
     {
         horizontalValue = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
-        {
-            jumpActivated = true;
-        }
+        //horizontalValue = Joystick.Horizontal;
+
+        MakeJump();
     }
 
     private void FixedUpdate()
@@ -90,6 +90,14 @@ public class MovementWRayCast : MonoBehaviour
         if (horizontalValue > 0 && sprt.flipX == true || horizontalValue < 0 && sprt.flipX == false)
         {
             sprt.flipX = !sprt.flipX;
+        }
+    }
+
+    public void MakeJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        {
+            jumpActivated = true;
         }
     }
 }

@@ -11,6 +11,7 @@ public class LifeController : MonoBehaviour
     //Evntos
     public HealthUpdatesDelegate damagedEvent;
     public HealthUpdatesDelegate healedEvent;
+    public HealthUpdatesDelegate dieEvent;
     private Animator animator;
 
     public void Start()
@@ -38,8 +39,10 @@ public class LifeController : MonoBehaviour
         damagedEvent?.Invoke(actualHealth);
         if (actualHealth <= 0)
         {
+            dieEvent?.Invoke(actualHealth);
+            //animator.SetBool("Death");
             gameObject.SetActive(false);
-            //also you can use: Destroy(gameObject);
+            
         }
 
     }
